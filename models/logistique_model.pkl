@@ -1,0 +1,7 @@
+MODEL_PATH = "models/logistic_model.pkl"
+os.makedirs("models", exist_ok=True)
+
+with open(MODEL_PATH, 'wb') as f:
+    pickle.dump(model, f)
+
+print(f"\nTrained Model Saved Successfully at {MODEL_PATH}!")
